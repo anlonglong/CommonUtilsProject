@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyou.xiyou.cyou.common.ui.view.RoundRectLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cyou="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:background="#CC000000"
+    android:orientation="vertical"
+    cyou:corner_radius="6dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:lineSpacingExtra="4dp"
+        android:focusable="false"/>
+
+</com.cyou.xiyou.cyou.common.ui.view.RoundRectLinearLayout>

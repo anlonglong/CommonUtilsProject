@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="request_cancelled">请求被取消</string>
+    <string name="parse_data_fail">解析数据失败</string>
+    <string name="all_pictures">所有图片</string>
+    <string name="album_permissions_denied_hint">关闭权限后相册将无法正常使用</string>
+    <string name="no_permissions_for_album">读取本地数据权限未开启，相册将无法正常使用。</string>
+</resources>

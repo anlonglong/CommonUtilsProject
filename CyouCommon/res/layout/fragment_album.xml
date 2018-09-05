@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="0.5dp"
+        android:paddingEnd="0.5dp"
+        android:overScrollMode="never"/>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#E022292C"
+        android:gravity="start|center_vertical">
+
+        <Button
+            android:id="@+id/btnSwitchDir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/album_switch_dir_icon"
+            android:gravity="start|center_vertical"
+            android:background="#00000000"
+            android:textSize="14sp"
+            android:textColor="@drawable/album_switch_dir_button_fg"
+            android:text="@string/all_pictures"
+            android:includeFontPadding="false"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar">
+
+        <View
+            android:id="@+id/overlayView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CC000000"
+            android:visibility="invisible"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dirView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="80dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:overScrollMode="never"
+            android:background="#FFFFFF"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+</RelativeLayout>

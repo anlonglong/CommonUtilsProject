@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="touched_drawable" format="reference"/>
+    <attr name="border_drawable" format="reference"/>
+    <attr name="corner_radius" format="dimension"/>
+
+    <declare-styleable name="TouchableLinearLayout">
+        <attr name="touched_drawable"/>
+        <attr name="border_drawable"/>
+    </declare-styleable>
+
+    <declare-styleable name="TouchableFrameLayout">
+        <attr name="touched_drawable"/>
+        <attr name="border_drawable"/>
+    </declare-styleable>
+
+    <declare-styleable name="TouchableRelativeLayout">
+        <attr name="touched_drawable"/>
+        <attr name="border_drawable"/>
+    </declare-styleable>
+
+    <declare-styleable name="TouchableImageButton">
+        <attr name="overlay_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundRectLinearLayout">
+        <attr name="corner_radius"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundRectFrameLayout">
+        <attr name="corner_radius"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundRectRelativeLayout">
+        <attr name="corner_radius"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundRectRecyclerView">
+        <attr name="corner_radius"/>
+    </declare-styleable>
+</resources>

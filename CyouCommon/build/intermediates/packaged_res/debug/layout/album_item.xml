@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/com.facebook.drawee"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="0.5dp"
+    android:paddingEnd="0.5dp"
+    android:paddingTop="1dp">
+
+    <com.cyou.xiyou.cyou.view.TouchableDraweeView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:failureImageScaleType="center"
+        fresco:placeholderImage="@drawable/icon_album_placeholder"
+        fresco:placeholderImageScaleType="center"/>
+
+</FrameLayout>

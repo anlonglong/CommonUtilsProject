@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion project.compileSdkVersion as int
+    buildToolsVersion project.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion project.minSdkVersion as int
+        targetSdkVersion project.targetSdkVersion as int
+        versionCode 1
+        versionName "1.0"
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+        implementation "com.android.support:appcompat-v7:${supportLibraryVersion}"
+        implementation "com.android.support:design:${supportLibraryVersion}"
+        implementation "com.alibaba:fastjson:${fastJSONVersion}"
+
+        //Fresco
+        implementation "com.facebook.fresco:fresco:${frescoVersion}"
+        implementation "com.facebook.fresco:animated-gif:${frescoVersion}"
+        implementation "com.facebook.fresco:animated-webp:${frescoVersion}"
+        implementation "com.facebook.fresco:webpsupport:${frescoVersion}"
+
+        //PermissionsDispatcher
+        implementation("com.github.hotchemi:permissionsdispatcher:${permissionsDispatcherVersion}") {
+            // if you don't use android.app.Fragment you can exclude support for them
+            exclude module: "support-v13"
+        }
+        annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:${permissionsDispatcherVersion}"
+
+        implementation "org.greenrobot:eventbus:${eventBusVersion}"
+        implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${baseRecyclerViewAdapterHelperVersion}"
+        implementation "com.readystatesoftware.systembartint:systembartint:${systembartintVersion}"
+        implementation "pub.devrel:easypermissions:${permissionVersion}"
+        implementation 'com.google.guava:guava:25.1-android'
+    }
+}

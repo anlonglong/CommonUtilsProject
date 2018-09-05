@@ -1,0 +1,55 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:2:1-15:12
+	package
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:2:11-47
+		INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+		INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:2:1-15:12
+		INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:2:1-15:12
+		INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:3:11-69
+application
+ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:4:5-14:19
+provider#android.support.v4.content.FileProvider
+ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:5:9-13:20
+	android:grantUriPermissions
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:9:13-47
+	android:authorities
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:7:13-73
+	android:exported
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:8:13-37
+	android:name
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:6:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:10:13-12:52
+	android:resource
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:12:17-50
+	android:name
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml:11:17-67
+uses-sdk
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+		INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+		ADDED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml
+		INJECTED from /Users/jacky/CommonUtilsProject/CyouCommon/AndroidManifest.xml

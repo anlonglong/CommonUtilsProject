@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="border_drawable"/>
+    <attr format="dimension" name="corner_radius"/>
+    <attr format="reference" name="touched_drawable"/>
+    <declare-styleable name="RoundRectFrameLayout"><attr name="corner_radius"/></declare-styleable>
+    <declare-styleable name="RoundRectLinearLayout"><attr name="corner_radius"/></declare-styleable>
+    <declare-styleable name="RoundRectRecyclerView"><attr name="corner_radius"/></declare-styleable>
+    <declare-styleable name="RoundRectRelativeLayout"><attr name="corner_radius"/></declare-styleable>
+    <declare-styleable name="TouchableFrameLayout"><attr name="touched_drawable"/><attr name="border_drawable"/></declare-styleable>
+    <declare-styleable name="TouchableImageButton"><attr format="color" name="overlay_color"/></declare-styleable>
+    <declare-styleable name="TouchableLinearLayout"><attr name="touched_drawable"/><attr name="border_drawable"/></declare-styleable>
+    <declare-styleable name="TouchableRelativeLayout"><attr name="touched_drawable"/><attr name="border_drawable"/></declare-styleable>
+    <item name="gif_uri" type="id"/>
+    <string name="album_permissions_denied_hint">关闭权限后相册将无法正常使用</string>
+    <string name="all_pictures">所有图片</string>
+    <string name="no_permissions_for_album">读取本地数据权限未开启，相册将无法正常使用。</string>
+    <string name="parse_data_fail">解析数据失败</string>
+    <string name="request_cancelled">请求被取消</string>
+</resources>
