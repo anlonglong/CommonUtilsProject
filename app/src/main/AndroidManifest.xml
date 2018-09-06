@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.allon.commonutilsproject">
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,12 +18,14 @@
         </activity>
         <activity android:name=".notification.NotificationActivity">
         </activity>
-        <activity android:name=".notification.ResultActivity"
-                  android:value=".MainActivity">
+        <activity
+            android:name=".notification.ResultActivity"
+            android:value=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"
-                />
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".fileprovider.FileProviderActivity">
         </activity>
     </application>
 

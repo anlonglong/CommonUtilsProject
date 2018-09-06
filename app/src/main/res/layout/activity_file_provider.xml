@@ -4,22 +4,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <Button
-        android:id="@+id/tv_notification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="通知工具类"/>
-    <Button
-        android:id="@+id/file_provider"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
-        android:text="兼容7.0 file provider"/>
+    android:orientation="vertical"
+    tools:context=".fileprovider.FileProviderActivity">
 
+    <Button
+        android:id="@+id/take_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="拍照"/>
+    <ImageView
+        android:id="@+id/image"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>
