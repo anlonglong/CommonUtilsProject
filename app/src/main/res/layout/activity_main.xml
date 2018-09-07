@@ -44,6 +44,14 @@
         android:layout_gravity="center_horizontal"
         android:textAllCaps="false"
         android:text="淡入淡出动画"/>
+    <Button
+        android:id="@+id/btn_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:stateListAnimator="@drawable/scale_animate"
+        android:text="有动画的按钮"/>
 
 
 </LinearLayout>

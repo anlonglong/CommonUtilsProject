@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         animator.setOnClickListener(this)
         drawable_animator.setOnClickListener(this)
         fade_animator.setOnClickListener(this)
+        btn_animator.setOnClickListener(this)
     }
 
 
