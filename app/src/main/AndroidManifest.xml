@@ -29,7 +29,11 @@
         </activity>
         <activity android:name=".fileprovider.FileProviderActivity">
         </activity>
-        <activity android:name=".animation.AnimationActivity">
+        <activity android:name=".animation.layoutanimation.LayoutAnimationActivity">
+        </activity>
+        <activity android:name=".animation.drawableanimator.DrawableAnimationActivity">
+        </activity>
+        <activity android:name=".animation.fadeanimation.CrossFadeActivity">
         </activity>
     </application>
 

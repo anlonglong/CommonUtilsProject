@@ -29,6 +29,21 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:textAllCaps="false"
-        android:text="动画"/>
+        android:text="布局动画"/>
+    <Button
+        android:id="@+id/drawable_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:text="Drawable动画"/>
+    <Button
+        android:id="@+id/fade_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:text="淡入淡出动画"/>
+
 
 </LinearLayout>
