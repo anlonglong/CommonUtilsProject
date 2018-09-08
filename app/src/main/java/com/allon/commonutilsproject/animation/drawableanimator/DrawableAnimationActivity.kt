@@ -31,6 +31,7 @@ class DrawableAnimationActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         if (mDrawableAnimator.isRunning) {
+            //开启之前必须先停止
             mDrawableAnimator.stop()
         }
         mDrawableAnimator.start()

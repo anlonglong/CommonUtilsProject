@@ -3,6 +3,7 @@ package com.allon.commonutilsproject
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.allon.commonutilsproject.animation.ThreeAnimation2SameEffectActivity
 import com.allon.commonutilsproject.animation.fadeanimation.CrossFadeActivity
 import com.allon.commonutilsproject.animation.layoutanimation.LayoutAnimationActivity
 import com.allon.commonutilsproject.fileprovider.FileProviderActivity
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         drawable_animator.setOnClickListener(this)
         fade_animator.setOnClickListener(this)
         btn_animator.setOnClickListener(this)
+        three_animator.setOnClickListener(this)
     }
 
 
@@ -33,6 +35,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
            R.id.animator -> { LayoutAnimationActivity.start(this) }
            R.id.drawable_animator -> { LayoutAnimationActivity.start(this) }
            R.id.fade_animator -> { CrossFadeActivity.start(this) }
+           R.id.three_animator -> { ThreeAnimation2SameEffectActivity.start(this) }
        }
     }
 }

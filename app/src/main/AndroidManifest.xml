@@ -35,6 +35,8 @@
         </activity>
         <activity android:name=".animation.fadeanimation.CrossFadeActivity">
         </activity>
+        <activity android:name=".animation.ThreeAnimation2SameEffectActivity">
+        </activity>
     </application>
 
 </manifest>
