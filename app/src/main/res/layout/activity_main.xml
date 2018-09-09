@@ -59,7 +59,7 @@
         android:layout_gravity="center_horizontal"
         android:textAllCaps="false"
         android:stateListAnimator="@drawable/scale_animate"
-        android:text="三种不同动画实现相同效果"/>
+        android:text="三种不同动画API实现相同效果"/>
     <Button
         android:id="@+id/fragment_animator"
         android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
         android:layout_gravity="center_horizontal"
         android:textAllCaps="false"
         android:stateListAnimator="@drawable/scale_animate"
-        android:text="fragment动画"/>
+        android:text="fragment切换动画（卡片翻转）"/>
 
 
 </LinearLayout>
