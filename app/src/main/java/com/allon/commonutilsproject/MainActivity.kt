@@ -3,6 +3,7 @@ package com.allon.commonutilsproject
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.allon.commonutilsproject.animation.CardFlipActivity
 import com.allon.commonutilsproject.animation.ThreeAnimation2SameEffectActivity
 import com.allon.commonutilsproject.animation.fadeanimation.CrossFadeActivity
 import com.allon.commonutilsproject.animation.layoutanimation.LayoutAnimationActivity
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         fade_animator.setOnClickListener(this)
         btn_animator.setOnClickListener(this)
         three_animator.setOnClickListener(this)
+        fragment_animator.setOnClickListener(this)
     }
 
 
@@ -36,6 +38,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
            R.id.drawable_animator -> { LayoutAnimationActivity.start(this) }
            R.id.fade_animator -> { CrossFadeActivity.start(this) }
            R.id.three_animator -> { ThreeAnimation2SameEffectActivity.start(this) }
+           R.id.fragment_animator -> { CardFlipActivity.start(this) }
        }
     }
 }
