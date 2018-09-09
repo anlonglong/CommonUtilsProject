@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.allon.commonutilsproject.animation.CardFlipActivity
+import com.allon.commonutilsproject.animation.RevealActivity
 import com.allon.commonutilsproject.animation.ThreeAnimation2SameEffectActivity
 import com.allon.commonutilsproject.animation.fadeanimation.CrossFadeActivity
 import com.allon.commonutilsproject.animation.layoutanimation.LayoutAnimationActivity
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         btn_animator.setOnClickListener(this)
         three_animator.setOnClickListener(this)
         fragment_animator.setOnClickListener(this)
+        reveal_animator.setOnClickListener(this)
     }
 
 
@@ -39,6 +41,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
            R.id.fade_animator -> { CrossFadeActivity.start(this) }
            R.id.three_animator -> { ThreeAnimation2SameEffectActivity.start(this) }
            R.id.fragment_animator -> { CardFlipActivity.start(this) }
+           R.id.reveal_animator -> { RevealActivity.start(this) }
        }
     }
 }

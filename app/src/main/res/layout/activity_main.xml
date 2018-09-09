@@ -68,6 +68,14 @@
         android:textAllCaps="false"
         android:stateListAnimator="@drawable/scale_animate"
         android:text="fragment切换动画（卡片翻转）"/>
+    <Button
+        android:id="@+id/reveal_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:stateListAnimator="@drawable/scale_animate"
+        android:text="Reveal animations"/>
 
 
 </LinearLayout>
