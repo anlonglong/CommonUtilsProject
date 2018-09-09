@@ -3,79 +3,117 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     android:orientation="vertical"
     android:padding="16dp"
-    android:id="@+id/container"
-    android:animateLayoutChanges="true"
-    android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <Button
-        android:id="@+id/tv_notification"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="通知工具类"/>
-    <Button
-        android:id="@+id/file_provider"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tv_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="通知工具类"/>
+
+        <Button
+            android:id="@+id/file_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="兼容7.0 file provider"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="布局动画"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
-        android:text="兼容7.0 file provider"/>
-    <Button
-        android:id="@+id/animator"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/drawable_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Drawable动画"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/fade_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="淡入淡出动画"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:stateListAnimator="@drawable/scale_animate"
+            android:text="有动画的按钮"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
-        android:text="布局动画"/>
-    <Button
-        android:id="@+id/drawable_animator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
-        android:text="Drawable动画"/>
-    <Button
-        android:id="@+id/fade_animator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
-        android:text="淡入淡出动画"/>
-    <Button
-        android:id="@+id/btn_animator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
-        android:stateListAnimator="@drawable/scale_animate"
-        android:text="有动画的按钮"/>
-    <Button
-        android:id="@+id/three_animator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
-        android:stateListAnimator="@drawable/scale_animate"
-        android:text="三种不同动画API实现相同效果"/>
-    <Button
-        android:id="@+id/fragment_animator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
-        android:stateListAnimator="@drawable/scale_animate"
-        android:text="fragment切换动画（卡片翻转）"/>
-    <Button
-        android:id="@+id/reveal_animator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
-        android:stateListAnimator="@drawable/scale_animate"
-        android:text="Reveal animations"/>
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/three_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:stateListAnimator="@drawable/scale_animate"
+            android:text="三种不同动画API实现相同效果"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/fragment_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:stateListAnimator="@drawable/scale_animate"
+            android:text="fragment切换动画（卡片翻转）"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/reveal_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@drawable/scale_animate"
+            android:text="Reveal animations"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/path_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="pathAnimation"/>
+    </LinearLayout>
 
 
 </LinearLayout>

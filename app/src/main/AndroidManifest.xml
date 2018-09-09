@@ -41,6 +41,8 @@
         </activity>
         <activity android:name=".animation.RevealActivity">
         </activity>
+        <activity android:name=".animation.PathActivity">
+        </activity>
     </application>
 
 </manifest>

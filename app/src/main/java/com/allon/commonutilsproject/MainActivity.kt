@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.allon.commonutilsproject.animation.CardFlipActivity
+import com.allon.commonutilsproject.animation.PathActivity
 import com.allon.commonutilsproject.animation.RevealActivity
 import com.allon.commonutilsproject.animation.ThreeAnimation2SameEffectActivity
 import com.allon.commonutilsproject.animation.fadeanimation.CrossFadeActivity
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         setContentView(R.layout.activity_main)
         tv_notification.setOnClickListener(this)
         file_provider.setOnClickListener(this)
+        file_provider.translationX = 0f
         animator.setOnClickListener(this)
         drawable_animator.setOnClickListener(this)
         fade_animator.setOnClickListener(this)
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         three_animator.setOnClickListener(this)
         fragment_animator.setOnClickListener(this)
         reveal_animator.setOnClickListener(this)
+        path_animator.setOnClickListener(this)
     }
 
 
@@ -42,6 +45,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
            R.id.three_animator -> { ThreeAnimation2SameEffectActivity.start(this) }
            R.id.fragment_animator -> { CardFlipActivity.start(this) }
            R.id.reveal_animator -> { RevealActivity.start(this) }
+           R.id.path_animator -> { PathActivity.start(this) }
        }
     }
 }
