@@ -4,8 +4,10 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.allon.commonutilsproject.animation.*
+import com.allon.commonutilsproject.animation.drawableanimator.DrawableAnimationActivity
 import com.allon.commonutilsproject.animation.fadeanimation.CrossFadeActivity
 import com.allon.commonutilsproject.animation.layoutanimation.LayoutAnimationActivity
+import com.allon.commonutilsproject.animation.revealanimation.RevealActivity
 import com.allon.commonutilsproject.fileprovider.FileProviderActivity
 import com.allon.commonutilsproject.notification.NotificationActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -38,7 +40,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
            R.id.tv_notification -> { NotificationActivity.start(this) }
            R.id.file_provider -> { FileProviderActivity.start(this) }
            R.id.animator -> { LayoutAnimationActivity.start(this) }
-           R.id.drawable_animator -> { LayoutAnimationActivity.start(this) }
+           R.id.drawable_animator -> { DrawableAnimationActivity.start(this) }
            R.id.fade_animator -> { CrossFadeActivity.start(this) }
            R.id.three_animator -> { ThreeAnimation2SameEffectActivity.start(this) }
            R.id.fragment_animator -> { CardFlipActivity.start(this) }

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".animation.RevealActivity">
+    tools:context=".animation.revealanimation.RevealActivity">
    <FrameLayout
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
@@ -32,4 +32,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="显示reveal动画"/>
+    <Button
+        android:layout_toRightOf="@id/reveal_animator"
+        android:id="@+id/reveal_effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RevealEffectActivity"/>
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.allon.commonutilsproject.animation
+package com.allon.commonutilsproject.animation.revealanimation
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -32,7 +32,10 @@ class RevealActivity : AppCompatActivity() {
                 revealAnimation(show, content)
             }
             show = !show
+        }
 
+        reveal_effect.setOnClickListener {
+            RevealEffectActivity.start(this)
         }
 
 

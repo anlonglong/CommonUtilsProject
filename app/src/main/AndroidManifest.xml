@@ -39,11 +39,14 @@
         </activity>
         <activity android:name=".animation.CardFlipActivity">
         </activity>
-        <activity android:name=".animation.RevealActivity">
+        <activity android:name=".animation.revealanimation.RevealActivity">
         </activity>
         <activity android:name=".animation.PathActivity">
         </activity>
         <activity android:name=".animation.EnlargeViewActivity">
+        </activity>
+        <activity android:name=".animation.revealanimation.RevealEffectActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
     </application>
 
