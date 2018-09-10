@@ -45,8 +45,15 @@
         </activity>
         <activity android:name=".animation.EnlargeViewActivity">
         </activity>
-        <activity android:name=".animation.revealanimation.RevealEffectActivity"
+        <activity
+            android:name=".animation.revealanimation.RevealEffectActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".animation.transitionanimation.ShareElementActivity">
+        </activity>
+        <activity android:name=".animation.transitionanimation.TransitionAnimationActivity">
+        </activity>
+        <activity android:name=".animation.transitionanimation.TransitionAnimationByExplodeActivity">
         </activity>
     </application>
 

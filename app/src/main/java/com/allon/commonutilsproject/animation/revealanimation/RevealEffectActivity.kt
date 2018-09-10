@@ -24,11 +24,11 @@ class RevealEffectActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reveal_effect)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toolbar.inflateMenu(R.menu.reveal_animation)
-        supportActionBar?.apply {
-            setSupportActionBar(toolbar)
-            setDisplayHomeAsUpEnabled(true)
-        }
+
+
         toolbar.setOnMenuItemClickListener {
             when(it.itemId) {
                 R.id.action_settings ->{

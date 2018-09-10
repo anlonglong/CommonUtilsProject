@@ -8,6 +8,9 @@ import com.allon.commonutilsproject.animation.drawableanimator.DrawableAnimation
 import com.allon.commonutilsproject.animation.fadeanimation.CrossFadeActivity
 import com.allon.commonutilsproject.animation.layoutanimation.LayoutAnimationActivity
 import com.allon.commonutilsproject.animation.revealanimation.RevealActivity
+import com.allon.commonutilsproject.animation.transitionanimation.ShareElementActivity
+import com.allon.commonutilsproject.animation.transitionanimation.TransitionAnimationActivity
+import com.allon.commonutilsproject.animation.transitionanimation.TransitionAnimationByExplodeActivity
 import com.allon.commonutilsproject.fileprovider.FileProviderActivity
 import com.allon.commonutilsproject.notification.NotificationActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -30,6 +33,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         reveal_animator.setOnClickListener(this)
         path_animator.setOnClickListener(this)
         enlarge_pic.setOnClickListener(this)
+        transition.setOnClickListener(this)
     }
 
 
@@ -47,6 +51,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
            R.id.reveal_animator -> { RevealActivity.start(this) }
            R.id.path_animator -> { PathActivity.start(this) }
            R.id.enlarge_pic -> { EnlargeViewActivity.start(this) }
+           R.id.transition -> { TransitionAnimationActivity.start(this) }
        }
     }
 }
