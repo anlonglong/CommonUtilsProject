@@ -114,6 +114,15 @@
             android:textAllCaps="false"
             android:text="pathAnimation"/>
     </LinearLayout>
-
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:id="@+id/enlarge_pic"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="仿微信朋友圈图片放大缩小动画"/>
+   </LinearLayout>
 
 </LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/thumb_button_1"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:padding="0dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/pic"
+            android:scaleType="centerCrop"
+            />
+
+    </LinearLayout>
+
+    <!-- 这个不可见的ImageView持有上面的ImageButton zoom后的图片版本。
+动画没有发生之前，它占据了整个屏幕。动画开始，这个View从上面
+ImageButton的范围变化到他自己最终的范围。
+  -->
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+/>
+</FrameLayout>

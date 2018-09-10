@@ -9,6 +9,8 @@ import android.view.animation.PathInterpolator
 import com.allon.commonutilsproject.R
 import kotlinx.android.synthetic.main.activity_path.*
 import android.animation.ObjectAnimator
+import android.support.animation.DynamicAnimation
+import android.support.animation.FlingAnimation
 import android.view.View
 import android.view.animation.AnimationUtils
 
@@ -27,6 +29,7 @@ class PathActivity : AppCompatActivity() {
         btn_path.setOnClickListener {
             archTo()
         }
+
     }
 
     private fun archTo() {

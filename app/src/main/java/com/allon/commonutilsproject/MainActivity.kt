@@ -3,10 +3,7 @@ package com.allon.commonutilsproject
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import com.allon.commonutilsproject.animation.CardFlipActivity
-import com.allon.commonutilsproject.animation.PathActivity
-import com.allon.commonutilsproject.animation.RevealActivity
-import com.allon.commonutilsproject.animation.ThreeAnimation2SameEffectActivity
+import com.allon.commonutilsproject.animation.*
 import com.allon.commonutilsproject.animation.fadeanimation.CrossFadeActivity
 import com.allon.commonutilsproject.animation.layoutanimation.LayoutAnimationActivity
 import com.allon.commonutilsproject.fileprovider.FileProviderActivity
@@ -30,6 +27,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         fragment_animator.setOnClickListener(this)
         reveal_animator.setOnClickListener(this)
         path_animator.setOnClickListener(this)
+        enlarge_pic.setOnClickListener(this)
     }
 
 
@@ -46,6 +44,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
            R.id.fragment_animator -> { CardFlipActivity.start(this) }
            R.id.reveal_animator -> { RevealActivity.start(this) }
            R.id.path_animator -> { PathActivity.start(this) }
+           R.id.enlarge_pic -> { EnlargeViewActivity.start(this) }
        }
     }
 }
