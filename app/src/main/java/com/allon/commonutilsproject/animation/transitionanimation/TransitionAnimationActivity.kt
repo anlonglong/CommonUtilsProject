@@ -5,6 +5,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
+import android.transition.Slide
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +22,21 @@ class TransitionAnimationActivity : AppCompatActivity(), View.OnClickListener {
                        }
                        1 -> {
                            TransitionAnimationByExplodeActivity.startWithXml(this)
+                       }
+                       2 -> {
+                           TransitionAnimationBySlideActivity.startWithCode(this)
+                       }
+                       3 -> {
+                           TransitionAnimationBySlideActivity.startWithXml(this)
+                       }
+                       4 -> {
+                           finishAfterTransition()
+                       }
+                       5 -> {
+                           val slide = Slide()
+                           slide.duration = 500L
+                           window.returnTransition = slide
+                           finishAfterTransition()
                        }
                    }
                }
