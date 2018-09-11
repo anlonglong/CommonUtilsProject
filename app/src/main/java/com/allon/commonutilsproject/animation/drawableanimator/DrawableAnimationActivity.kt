@@ -26,7 +26,6 @@ class DrawableAnimationActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_drawable_animation)
         drawable_animation_imag.setOnClickListener(this)
         mDrawableAnimator =  drawable_animation_imag.background as AnimationDrawable
-        progress.alpha = 0f
     }
 
     override fun onClick(v: View) {

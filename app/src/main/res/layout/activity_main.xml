@@ -130,5 +130,15 @@
            android:textAllCaps="false"
            android:text="shareElementAniamtion"/>
    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vertor_anomation"
+            android:text="矢量动画"/>
+    </LinearLayout>
 
 </LinearLayout>

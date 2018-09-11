@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         path_animator.setOnClickListener(this)
         enlarge_pic.setOnClickListener(this)
         transition.setOnClickListener(this)
+        vertor_anomation.setOnClickListener(this)
     }
 
 
@@ -52,6 +53,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
            R.id.path_animator -> { PathActivity.start(this) }
            R.id.enlarge_pic -> { EnlargeViewActivity.start(this) }
            R.id.transition -> { TransitionAnimationActivity.start(this) }
+           R.id.vertor_anomation -> { VectorAnimatorActivity.start(this) }
        }
     }
 }
