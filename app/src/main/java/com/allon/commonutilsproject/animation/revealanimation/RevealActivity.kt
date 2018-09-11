@@ -55,16 +55,34 @@ class RevealActivity : AppCompatActivity() {
         val endRadius = if (isShow) radius else 0f
         val animator = ViewAnimationUtils.createCircularReveal(view, x, y, startRadius, endRadius)
         animator.duration = 300L
-        if (isShow) {
-            view.visibility = View.VISIBLE
-        }else{
-            animator.addListener(object : AnimatorListenerAdapter() {
-                override fun onAnimationEnd(animation: Animator?) {
-                    super.onAnimationEnd(animation)
-                    view.visibility = View.INVISIBLE
+        animator.addListener(object : AnimatorListenerAdapter() {
+
+            override fun onAnimationStart(animation: Animator?) {
+                if (isShow) {
+                    view.visibility =  View.VISIBLE
                 }
-            })
-        }
+
+            }
+
+            override fun onAnimationEnd(animation: Animator?) {
+                super.onAnimationEnd(animation)
+                if (!isShow) {
+                    view.visibility = View.INVISIBLE
+
+                }
+            }
+        })
+//        if (isShow) {
+//这里显示 view 调用并没有在监听方法里，并且是在动画开始前调用,当然也可以在监听的start方法里面显示。
+//            view.visibility = View.VISIBLE
+//        }else{
+//            animator.addListener(object : AnimatorListenerAdapter() {
+//                override fun onAnimationEnd(animation: Animator?) {
+//                    super.onAnimationEnd(animation)
+//                    view.visibility = View.INVISIBLE
+//                }
+//            })
+//        }
         animator.start()
     }
 }
