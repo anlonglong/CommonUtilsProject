@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.GridLayoutManager
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
@@ -40,6 +41,10 @@ class TransitionAnimationActivity : AppCompatActivity(), View.OnClickListener {
         for (i in 0 until viewgroup_transition.childCount) {
             viewgroup_transition.getChildAt(i).setOnClickListener(this)
         }
+        rv_share_elements.layoutManager = GridLayoutManager(this,2)
+        rv_share_elements.isNestedScrollingEnabled = false
+        rv_share_elements.adapter = MyRecycleViewAdapter(this)
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
