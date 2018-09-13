@@ -139,6 +139,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/vertor_anomation"
             android:text="矢量动画"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/object_anomator"
+            android:textAllCaps="false"
+            android:text="属性动画【objectAnimator】"/>
     </LinearLayout>
 
 </LinearLayout>

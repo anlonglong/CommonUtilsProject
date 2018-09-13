@@ -59,6 +59,8 @@
         </activity>
         <activity android:name=".animation.VectorAnimatorActivity">
         </activity>
+        <activity android:name=".animation.objectanimation.ObjectAnimationActivity">
+        </activity>
     </application>
 
 </manifest>

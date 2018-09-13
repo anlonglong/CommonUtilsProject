@@ -7,6 +7,7 @@ import com.allon.commonutilsproject.animation.*
 import com.allon.commonutilsproject.animation.drawableanimator.DrawableAnimationActivity
 import com.allon.commonutilsproject.animation.fadeanimation.CrossFadeActivity
 import com.allon.commonutilsproject.animation.layoutanimation.LayoutAnimationActivity
+import com.allon.commonutilsproject.animation.objectanimation.ObjectAnimationActivity
 import com.allon.commonutilsproject.animation.revealanimation.RevealActivity
 import com.allon.commonutilsproject.animation.transitionanimation.ShareElementActivity
 import com.allon.commonutilsproject.animation.transitionanimation.TransitionAnimationActivity
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         enlarge_pic.setOnClickListener(this)
         transition.setOnClickListener(this)
         vertor_anomation.setOnClickListener(this)
+        object_anomator.setOnClickListener(this)
     }
 
 
@@ -54,6 +56,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
            R.id.enlarge_pic -> { EnlargeViewActivity.start(this) }
            R.id.transition -> { TransitionAnimationActivity.start(this) }
            R.id.vertor_anomation -> { VectorAnimatorActivity.start(this) }
+           R.id.object_anomator -> { ObjectAnimationActivity.start(this) }
        }
     }
 }

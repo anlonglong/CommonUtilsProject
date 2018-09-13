@@ -35,10 +35,10 @@ class CrossFadeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cross_fade)
-        initViewState(this)
+        initViewState()
     }
 
-    private fun initViewState(ctx: Context) {
+    private fun initViewState() {
          async {
              delay(2000)
              launch(UI) {
