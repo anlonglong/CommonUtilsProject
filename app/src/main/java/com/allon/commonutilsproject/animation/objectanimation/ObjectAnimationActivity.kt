@@ -64,5 +64,14 @@ class ObjectAnimationActivity : AppCompatActivity() {
             }
         }
 
+        ValueAnimator.ofInt(0, 60).apply {
+            duration = 60 * 1000L
+            addUpdateListener {
+                println("value = ${it.animatedValue}")
+            }
+        }.start()
+
     }
+
+    fun f(){}
 }

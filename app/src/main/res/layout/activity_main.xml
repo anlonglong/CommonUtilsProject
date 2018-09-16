@@ -146,5 +146,22 @@
             android:textAllCaps="false"
             android:text="属性动画【objectAnimator】"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/face_detector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人脸识别"
+            />
+        <Button
+            android:id="@+id/asyntask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="异步任务库测试"
+            />
+    </LinearLayout>
 
 </LinearLayout>

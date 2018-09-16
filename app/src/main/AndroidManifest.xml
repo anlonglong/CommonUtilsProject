@@ -3,6 +3,7 @@
           package="com.allon.commonutilsproject">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:allowBackup="true"
@@ -60,6 +61,8 @@
         <activity android:name=".animation.VectorAnimatorActivity">
         </activity>
         <activity android:name=".animation.objectanimation.ObjectAnimationActivity">
+        </activity>
+        <activity android:name=".FaceDetectorActivity">
         </activity>
     </application>
 

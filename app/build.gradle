@@ -44,4 +44,9 @@ dependencies {
     implementation 'com.android.support:support-dynamic-animation:27.1.1'
     implementation 'com.android.support:design:27.1.1'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    // Camera
+    implementation "com.otaliastudios:cameraview:1.5.1"
+
+    // Android face detector
+    implementation 'com.github.husaynhakeem:android-face-detector:v1.1'
 }
